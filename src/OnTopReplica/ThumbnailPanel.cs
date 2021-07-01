@@ -105,7 +105,7 @@ namespace OnTopReplica {
 
                 //Refresh gui
                 UpdateThubmnail();
-                _labelGlass.Visible = !value;
+                _labelGlass.Visible = !value && _thumbnail == null;
                 this.Invalidate();
             }
         }
